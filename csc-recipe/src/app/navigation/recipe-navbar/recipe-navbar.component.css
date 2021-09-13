@@ -1,0 +1,105 @@
+.recipeNavBar {
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.2em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Recipes ."
+      "button2 ."
+      "button3 ."
+      "button4 ."
+      "button5 ."
+      "button6 ."
+      "button7 ."
+      "button8 ."
+      "button9 ."
+      "button10 .";
+    background-color: grey;
+    margin-left: -.8rem;
+    margin-top: -.8rem;
+    margin-right: -.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Recipes { 
+    grid-area: Recipes;
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey;
+    
+  }
+  
+  .button2 { 
+    grid-area: button2;
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button3 {
+    grid-area: button3; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button4 { 
+    grid-area: button4; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button5 { 
+    grid-area: button5; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button6 { 
+    grid-area: button6; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button7 { 
+    grid-area: button7;
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button8 { 
+    grid-area: button8; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button9 { 
+    grid-area: button9; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  
+  .button10 { 
+    grid-area: button10; 
+    text-align: center;
+    width:50%;
+    border: .3rem solid black;
+    background-color:darkslategrey
+  }
+  

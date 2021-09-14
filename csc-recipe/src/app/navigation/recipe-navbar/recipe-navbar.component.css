@@ -1,8 +1,8 @@
 .recipeNavBar {
     display: grid;
-    grid-template-columns: 1fr 80%;
+    grid-template-columns: 20rem;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.2em 0em;
+    gap: 0em 0em;
     grid-auto-flow: row;
     grid-template-areas:
       "Recipes ."
@@ -15,91 +15,105 @@
       "button8 ."
       "button9 ."
       "button10 .";
-    background-color: grey;
+    background-color: rgb(83, 83, 83);
     margin-left: -.8rem;
-    margin-top: -.8rem;
-    margin-right: -.8rem;
-    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
+    margin-right: 1rem;
+    
   }
   
+  .navBarLinks:link, .navBarLinks:visited{
+    background-color:darkslategrey;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  .navBarLinks:hover, .navBarLinks:active{
+    color:white;
+  }
   .Recipes { 
     grid-area: Recipes;
     text-align: center;
-    width:50%;
     border: .3rem solid black;
     background-color:darkslategrey;
-    
+    margin:-.1rem;
+    font-size: 3.5rem;
   }
   
   .button2 { 
     grid-area: button2;
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button3 {
     grid-area: button3; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button4 { 
     grid-area: button4; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button5 { 
     grid-area: button5; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button6 { 
     grid-area: button6; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button7 { 
     grid-area: button7;
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button8 { 
     grid-area: button8; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button9 { 
     grid-area: button9; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
   }
   
   .button10 { 
     grid-area: button10; 
     text-align: center;
-    width:50%;
     border: .3rem solid black;
-    background-color:darkslategrey
+    background-color:darkslategrey;
+    margin:-.1rem;
+  }
+
+  .recipeNavBar{
+    border: .3rem solid black;
   }
   

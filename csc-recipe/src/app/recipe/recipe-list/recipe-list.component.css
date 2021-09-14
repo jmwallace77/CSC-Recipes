@@ -1,0 +1,13 @@
+p{
+    font-size: 20rem;
+    
+}
+
+.recipe-list-component{
+    float:right;
+    border: .3rem solid black;
+    align-self: center;
+    justify-self: center;
+    width: 85%;
+    height: auto;
+}

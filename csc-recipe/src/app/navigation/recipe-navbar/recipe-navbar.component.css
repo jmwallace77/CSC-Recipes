@@ -1,27 +1,65 @@
 .recipeNavBar {
     display: grid;
     grid-template-columns: 20rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0em 0em;
-    grid-auto-flow: row;
+    grid-auto-flow:row;
     grid-template-areas:
-      "Recipes ."
-      "button2 ."
-      "button3 ."
-      "button4 ."
-      "button5 ."
-      "button6 ."
-      "button7 ."
-      "button8 ."
-      "button9 ."
-      "button10 .";
+      "options";
     background-color: rgb(83, 83, 83);
     margin-left: -.8rem;
     margin-top: -1.5rem;
     margin-right: 1rem;
+    height:auto;
+  }
+
+  .optn{
+    background-color:darkslategrey;
+    color: black;
+    font-size: xx-large;
+    border: .3rem solid black;
+    text-align: center;
+    margin:-.1rem;
+    cursor: pointer;
+  }
+
+  .options{
+    position: relative;
+    display: inline-block;
+  }
+
+  .options-content{
+    display:none;
+    position: absolute;
+    text-align: center;
+    border: .3rem solid black;
+    background-color:darkslategrey;
+    font-size: 3.5rem;
+    min-width: 20rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin:0rem -.3rem 0rem -.3rem;
+  }
+
+  .options-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
     
   }
-  
+
+  .options-content a:hover {
+    color:white;
+  }
+
+  .options:hover .options-content{
+    display: block;
+  }
+
+  .options:hover .optn{
+    color: white;
+  }
+
   .navBarLinks:link, .navBarLinks:visited{
     background-color:darkslategrey;
     width: 100%;
@@ -32,8 +70,9 @@
   .navBarLinks:hover, .navBarLinks:active{
     color:white;
   }
+
+
   .Recipes { 
-    grid-area: Recipes;
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -42,7 +81,6 @@
   }
   
   .button2 { 
-    grid-area: button2;
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -50,7 +88,6 @@
   }
   
   .button3 {
-    grid-area: button3; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -58,7 +95,6 @@
   }
   
   .button4 { 
-    grid-area: button4; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -66,7 +102,6 @@
   }
   
   .button5 { 
-    grid-area: button5; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -74,7 +109,6 @@
   }
   
   .button6 { 
-    grid-area: button6; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -82,7 +116,6 @@
   }
   
   .button7 { 
-    grid-area: button7;
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -90,7 +123,6 @@
   }
   
   .button8 { 
-    grid-area: button8; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -98,7 +130,6 @@
   }
   
   .button9 { 
-    grid-area: button9; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;
@@ -106,7 +137,6 @@
   }
   
   .button10 { 
-    grid-area: button10; 
     text-align: center;
     border: .3rem solid black;
     background-color:darkslategrey;

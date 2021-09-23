@@ -7,6 +7,7 @@ import { RecipeNavbarComponent } from './navigation/recipe-navbar/recipe-navbar.
 import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { AddRecipeComponent } from './recipe/add-recipe/add-recipe.component';
 import { RemoveRecipeComponent } from './recipe/remove-recipe/remove-recipe.component';
+import { RecipeDisplayComponent } from './recipe/recipe-display/recipe-display.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RemoveRecipeComponent } from './recipe/remove-recipe/remove-recipe.comp
     RecipeNavbarComponent,
     RecipeListComponent,
     AddRecipeComponent,
-    RemoveRecipeComponent
+    RemoveRecipeComponent,
+    RecipeDisplayComponent
   ],
   imports: [
     BrowserModule,

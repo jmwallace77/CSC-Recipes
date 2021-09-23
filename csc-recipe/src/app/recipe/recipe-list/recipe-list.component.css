@@ -28,21 +28,35 @@
   .Title { 
       grid-area: Title; 
     }
+
+  .title{
+    cursor: pointer;
+    user-select: none;
+  }
   
   .Favorites { 
       grid-area: Favorites; 
+      
     }
 
+  .fav{
+    cursor: pointer;
+    user-select: none;
+  }
   
   .Image { 
       grid-area: Image; 
+      cursor: pointer;
+      user-select: none;
     }
   
   .Description { 
       grid-area: Description;
+      user-select: none;
     }
   
   .Category { 
       grid-area: Category; 
+      user-select: none;
     }
   

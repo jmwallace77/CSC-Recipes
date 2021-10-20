@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { RecipeService } from 'src/app/services/recipe-service/recipe-service.service';
 import { Recipe } from '../models/recipe.model';
 
 @Component({
@@ -9,12 +10,16 @@ import { Recipe } from '../models/recipe.model';
 export class RecipeListComponent implements OnInit {
 
   public recipeList: Recipe[] = [new Recipe(0), new Recipe(1), new Recipe(2), new Recipe(3)];
+  
+  chosenRecipe: any;
+  rs: RecipeService;
 
-  constructor() {
+  constructor(recipeService: RecipeService) {
+    this.rs = recipeService;
    }
 
   ngOnInit(): void {
-    console.log(this.recipeList[0].title);
+    //console.log(this.recipeList[0].title);
   }
 
   favoriting(id: number){
@@ -29,8 +34,7 @@ export class RecipeListComponent implements OnInit {
     
   }
 
-  unfavoriting(){
-    (document.getElementById("favoriteIcon") as HTMLImageElement).src = "../assets/favorite-unchecked.png";
+  recipeSelection(recipe: Recipe){
+    this.rs.setSelectedRecipe(recipe);
   }
-
 }

@@ -1,3 +1,29 @@
 <div class="recipe-display-component">
-    <p>remove-recipe works!</p>
+    <div class="container" >
+        <div class="Image">
+            <img src={{chosenRecipe.image}}/>
+        </div>
+        <div class="Title">
+            <h1 class="title">{{chosenRecipe.title}}</h1>
+        </div>
+        <div class="BackButton"></div>
+        <div class="CategoryAndDescription">
+            <h2 class="Category">{{chosenRecipe.category}}</h2>
+            <p class="Description">{{chosenRecipe.description}}</p>
+        </div>
+        <div class="Ingrediants">
+            <ul *ngFor="let ing of chosenRecipe.ingrediants">
+                <li>
+                    {{ing}}
+                </li>
+            </ul>
+        </div>
+        <div class="Instructions">
+            <ul *ngFor="let ins of chosenRecipe.instructions">
+                <li>
+                    {{ins}}
+                </li>
+            </ul>
+        </div>
+      </div>
 </div>

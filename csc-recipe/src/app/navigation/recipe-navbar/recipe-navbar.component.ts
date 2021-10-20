@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from 'src/app/recipe/models/recipe.model';
 
 @Component({
   selector: 'app-recipe-navbar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeNavbarComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

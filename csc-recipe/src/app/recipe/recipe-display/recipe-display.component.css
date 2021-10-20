@@ -10,3 +10,33 @@
     padding-bottom: .5rem;
     font-size:large;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Image Image Image Title Title Title Title BackButton BackButton BackButton"
+      "Image Image Image CategoryAndDescription CategoryAndDescription CategoryAndDescription CategoryAndDescription CategoryAndDescription CategoryAndDescription CategoryAndDescription"
+      "Ingrediants Ingrediants Ingrediants Ingrediants Instructions Instructions Instructions Instructions Instructions Instructions"
+      "Ingrediants Ingrediants Ingrediants Ingrediants Instructions Instructions Instructions Instructions Instructions Instructions"
+      "Ingrediants Ingrediants Ingrediants Ingrediants Instructions Instructions Instructions Instructions Instructions Instructions";
+  }
+  
+  .Image { grid-area: Image; }
+  
+  .Title { grid-area: Title; }
+  
+  .BackButton { grid-area: BackButton; }
+  
+  .CategoryAndDescription { grid-area: CategoryAndDescription; }
+  
+  .Ingrediants { grid-area: Ingrediants; }
+  
+  .Instructions { grid-area: Instructions; }
+  
+p{
+    font-size: xx-large;
+}

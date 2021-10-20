@@ -1,13 +1,14 @@
 <div class="recipe-list-component">
     <div class="container"  *ngFor="let recipe of recipeList">
         <div class="Title">
-            <h1 routerLink="../../recipe/recipe-display" class="title">{{recipe.title}}</h1>
+            <h1 routerLink="../../recipe/recipe-display" class="title" (click)="recipeSelection(recipe)">
+                {{recipe.title}}</h1>
         </div>
         <div class="Favorites">
             <img src={{recipe.favoriteButtons}} id={{recipe.id}} (click)="favoriting(recipe.id)" class="fav">
         </div>
         <div class="Image">
-            <img routerLink="../../recipe/recipe-display"  src={{recipe.image}}/>
+            <img routerLink="../../recipe/recipe-display"  src={{recipe.image}} (click)="recipeSelection(recipe)"/>
         </div>
         <div class="Description">
             <p>{{recipe.description}}</p>

@@ -1,7 +1,24 @@
 html{
-    background-color: grey;
+    background-color: rgba(34, 132, 139, 0.4);
     font-family: 'Dancing Script', cursive;
     font-size: 62.5%;
     font-weight:100;
+    
 }
+
+html::after {
+    content: "";
+    position:fixed;
+    background: url(https://cdn.mos.cms.futurecdn.net/BX7vjSt8KMtcBHyisvcSPK.jpg) transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+}
+
+
 

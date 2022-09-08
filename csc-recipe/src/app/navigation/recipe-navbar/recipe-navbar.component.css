@@ -6,7 +6,7 @@
     grid-auto-flow:row;
     grid-template-areas:
       "options";
-    background-color: rgb(83, 83, 83);
+    background-color: rgba(83, 83, 83, 0);
     margin-left: -.8rem;
     margin-top: -1.5rem;
     margin-right: 1rem;
@@ -22,6 +22,7 @@
     text-align: center;
     margin:-.1rem;
     cursor: pointer;
+    border-radius: 10%/50%;
   }
 
   .options{
@@ -33,8 +34,6 @@
     display:none;
     position: absolute;
     text-align: center;
-    border: .3rem solid black;
-    background-color:darkslategrey;
     font-size: 3.5rem;
     min-width: 24.9rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -67,9 +66,13 @@
     text-align: center;
     text-decoration: none;
     color: black;
+    border: .3rem solid black;
+    border-radius: 10%/50%;
   }
   .navBarLinks:hover, .navBarLinks:active{
     color:white;
+    border: .3rem solid black;
+    border-radius: 10%/50%;
   }
 
 
@@ -145,6 +148,6 @@
   }
 
   .recipeNavBar{
-    border: .3rem solid black;
+    border: .3rem solid transparent;
   }
   

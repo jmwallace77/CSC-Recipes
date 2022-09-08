@@ -6,17 +6,17 @@
     grid-auto-flow: row;
     grid-template-areas:
       "Title Title Title Title . SearchBar SearchBar SearchBar SearchBar SearchBar SearchBar";
-    background-color: rgb(83, 83, 83);
+    background-color: rgba(83, 83, 83, .4);
     border: .3rem solid black;
     margin-left: -.8rem;
     margin-top: -.8rem;
     margin-right: -.8rem;
     margin-bottom: 1.5rem;
-    
   }
   
   .Title {
     grid-area: Title;
+    border-radius: 1%;
     font-size: large;
     border: .3rem solid black;
     justify-self:start;
@@ -30,6 +30,7 @@
   
   .SearchBar {
     grid-area: SearchBar;
+    border-radius: 1%;
     font-size: 2rem;
     margin-top: -.1rem;
     margin-bottom: -.1rem;
@@ -46,15 +47,25 @@
     margin-top: 2rem;
     width: 90%;
     height: 50%;
+    border: .3rem solid black;
+    -webkit-appearence: none;
+    -ms-appearence: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    border-radius: 5%/50%;
+    font-weight: bold;
   }
 
   #searchIcon{
     vertical-align: middle;
     margin-top: 2rem;
+    cursor: pointer;
   }
   
 .navBar{
   display:inline-flex;
+  border-radius: 10%;
 }
 
   

@@ -7,6 +7,6 @@ import { Recipe } from './recipe/models/recipe.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "CSC's Recipes";
+  title = "CSW's Recipes";
   search = "SearchBar";
 }

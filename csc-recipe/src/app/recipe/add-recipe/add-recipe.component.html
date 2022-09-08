@@ -1,3 +1,56 @@
 <div class="add-recipe-component">
-    <p>add-recipe works!</p>
+    <div class="container">
+        <div class="PageTitle">
+            <h1>Add Recipe</h1>
+        </div>
+        <div class="AddRecipe">
+            <button id="addButtonRecipe" (click)="addRecipe()">Add Recipe</button>
+        </div>
+        <div class="Title">
+            <h2>Name:</h2>
+            <input id="Title" class="inputFields" placeholder="Enter Name">
+        </div>
+        <div class="Category">
+            <h2>Category:</h2>
+            <select id="Category" class="dropDowns">
+                <option value="Asian">Asian</option>
+                <option value="Bread">Bread</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Cookout">Cookout</option>
+                <option value="Crockpot">Crockpot</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Indian">Indian</option>
+                <option value="Meat meals">Meat meals</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Potatoes">Potatoes</option>
+                <option value="Processes">Processes</option>
+                <option value="Sauces/Seasoning">Sauces/Seasoning</option>
+                <option value="Sides">Sides</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Soups">Soups</option>
+            </select>
+        </div>
+        <div class="Description">
+            <h2>Descrption:</h2>
+            <textarea id="Description" class="inputDesc" placeholder="Enter Description"></textarea>
+        </div>
+        <div class="Image">
+            <h2>Image Link:</h2>
+            <input id="Image" class="inputFields" placeholder="Enter Link to Image">
+        </div>
+    </div>
+    <div class="IngIns">
+        <div class="Ingrediants">
+            <h2>Ingrediants:</h2>
+            <div class="Ingrediant"></div>
+            <button class="add" (click)="addIngrediant()">+</button>
+        </div>
+        <div class="Instructions">
+            <h2>Instructions:</h2>
+            <div class="Instruction"></div>
+            <button class="add" (click)="addInstruction()">+</button>
+        </div>
+    </div>
 </div>

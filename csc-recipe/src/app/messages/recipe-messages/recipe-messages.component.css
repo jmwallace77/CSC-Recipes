@@ -1,0 +1,16 @@
+.recipe-messages-component {
+    position:relative;
+    border: .3rem solid black;
+    align-self: center;
+    justify-self: center;
+    width: 126rem;
+    height: auto;
+    left: 24.5rem;
+    top: -9.5rem;
+    font-size:large;
+}
+
+.chosenMessage {
+    border: .3rem solid black;
+      margin-bottom: .1rem;
+}

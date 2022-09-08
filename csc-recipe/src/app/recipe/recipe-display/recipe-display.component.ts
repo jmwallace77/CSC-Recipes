@@ -9,10 +9,13 @@ import { Recipe } from '../models/recipe.model';
 })
 export class RecipeDisplayComponent implements OnInit {
 
-  chosenRecipe: any;
+  chosenRecipe: Recipe;
 
   constructor(recipeService: RecipeService) { 
     this.chosenRecipe = recipeService.getSelectedRecipe();
+    this.chosenRecipe.ingrediants.forEach(element => {
+      console.log(element.ingrediant);
+    });
   }
 
   ngOnInit(): void {

@@ -7,10 +7,135 @@
     height: auto;
     left: 24.5rem;
     top: -9.5rem;
-    padding-bottom: .5rem;
     font-size:large;
 }
 
-p{
-    font-size: xx-large;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . PageTitle . . AddRecipe"
+      ". Title Title . Image Image ."
+      ". Category Category . Description Description ."
+      ". IngIns IngIns IngIns IngIns IngIns .";
+      border: .3rem solid black;
+      margin-bottom: .1rem;
+      margin-top: .2rem;
+}
+
+.PageTitle {
+    grid-area: PageTitle;
+    text-align: center;
+}
+
+.AddRecipe{
+    grid-area: AddRecipe;
+    margin: auto;
+}
+
+.Title { 
+    grid-area: Title; 
+}
+
+.Image {
+    grid-area: Image;
+}
+
+.Category {
+    grid-area: Category;
+}
+
+.Description {
+    grid-area: Description;
+}
+
+.IngIns {
+    grid-area: IngIns;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Ingrediants Ingrediants . Instructions Instructions .";
+      border: .3rem solid black; 
+}
+
+.Ingrediants {
+    grid-area: Ingrediants;
+}
+
+.Instructions{
+    grid-area: Instructions;
+}
+
+.inputFields{
+    border: .3rem solid black;
+    -webkit-appearence: none;
+    -ms-appearence: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    padding: .5rem 1.5rem;
+    border-radius: 5%/50%;
+    width: 40rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.inputDesc{
+    resize: none;
+    border: .3rem solid black;
+    -webkit-appearence: none;
+    -ms-appearence: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    padding: .5rem 1.5rem;
+    border-radius: 5%/50%;
+    width: 40rem;
+    height: 7rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.dropDowns {
+    border-radius: 5%/50%;
+    cursor: pointer;
+    width: 40rem;
+    padding: 1rem;
+    font-size: large;
+    border: .3rem solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../../assets/csw_dropdown_arrow.png) no-repeat right/7% white;
+    font-weight: bold;
+}
+
+.add{
+    cursor: pointer;
+    border-radius: 40%/50%;
+    border: .3rem solid black;
+    align-self: center;
+    justify-self: center;
+    width: 5rem;
+    height: auto;
+    font-size:x-large;
+    font-weight: bold;
+    background: white;
+}
+
+#addButtonRecipe {
+    cursor: pointer;
+    border-radius: 20%/50%;
+    border: .3rem solid black;
+    width: 15rem;
+    height: 5rem;
+    font-size:large;
+    font-weight: bold;
+    background: white;
 }

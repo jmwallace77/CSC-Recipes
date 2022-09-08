@@ -9,27 +9,48 @@ import { Recipe } from '../models/recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  public recipeList: Recipe[] = [new Recipe(0), new Recipe(1), new Recipe(2), new Recipe(3)];
+  public recipeList: Array<Recipe>;
   
   chosenRecipe: any;
   rs: RecipeService;
 
   constructor(recipeService: RecipeService) {
     this.rs = recipeService;
+    this.recipeList = this.getAllRecipes();
    }
 
   ngOnInit(): void {
-    //console.log(this.recipeList[0].title);
+    
+  }
+
+  getAllRecipes() {
+    this.rs.getAllRecipes().subscribe(recipe => {
+      this.recipeList = recipe;
+      this.recipeList.forEach(element => {
+        console.log(element.title);
+        console.log(element.id);
+        console.log(element.favorite);
+      });
+    });
+    return this.recipeList;
   }
 
   favoriting(id: number){
+    id = id-1;
+    const documentId = id + 1;
+    // console.log(id);
+    // console.log(this.recipeList[id-1].title);
+    // console.log(this.recipeList[id-1].favorite);
+    //console.log((document.getElementById(id.toString()) as HTMLImageElement).src);
     if(this.recipeList[id].favorite === true){
-      (document.getElementById(id.toString()) as HTMLImageElement).src = "../assets/favorite-unchecked.png";
+      (document.getElementById(documentId.toString()) as HTMLImageElement).src = "../assets/favorite-unchecked.png";
       this.recipeList[id].favorite = false;
+      this.recipeList[id].favoriteButtons = "../assets/favorite-unchecked.png";
     }
     else{
-      (document.getElementById(id.toString()) as HTMLImageElement).src = "../assets/favorite-checked.png";
+      (document.getElementById(documentId.toString()) as HTMLImageElement).src = "../assets/favorite-checked.png";
       this.recipeList[id].favorite = true;
+      this.recipeList[id].favoriteButtons = "../assets/favorite-checked.png";
     }
     
   }

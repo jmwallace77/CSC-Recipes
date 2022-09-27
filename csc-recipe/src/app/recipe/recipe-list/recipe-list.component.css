@@ -63,6 +63,7 @@
       user-select: none;
       margin: 0rem;
       font-size: medium;
+      max-width: fit-content;
    }
   
   .Category { 
